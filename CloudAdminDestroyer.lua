@@ -1,9 +1,10 @@
 --[[
-Lucky Block Admin V.1
+Fedoratum Cloud Admin
 
-Lucky Block is the best suggested game for this
+Search for a game with a cloud gear that has servercontrol remote and it's meet with not an old cloud.
 
-Reset or retry if it doesn't work because it needs to search for a gear.
+This is a universal admin for a game with cloud gear.
+
 --]]
 
 local plr = game.Players.LocalPlayer
@@ -246,9 +247,9 @@ prefix(mesheditor) (Will pop up a GUI that will make you edit your gear mesh)
 
 ]])
 elseif msg:sub(1,10) == prefix.."invisible" then
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
+
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 Delete()
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -266,16 +267,11 @@ for i, v in pairs(chr.Head:GetDescendants()) do
 		CloudInvoke(v,"Transparency",1)
 	end
 end
-task.wait(0.7)
-DeleteCloud()
 end
 elseif msg:sub(1,8) == prefix.."visible" then
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
+
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 Delete()
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -293,16 +289,11 @@ for i, v in pairs(chr.Head:GetDescendants()) do
 		CloudInvoke(v,"Transparency",0)
 	end
 end
-task.wait(0.7)
-DeleteCloud()
 end
 elseif msg:sub(1,4) == prefix.."god" then
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
+
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 Delete()
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -311,17 +302,11 @@ CloudInvoke(chr.PompousTheCloud,"ManualActivationOnly",true)
 CloudInvoke(chr.Humanoid,"MaxHealth",9e24)
 task.wait(1)
 CloudInvoke(chr.Humanoid,"Health",9e24)
-task.wait(0.8)
-DeleteCloud()
 end
-
 elseif msg:sub(1,6) == prefix.."ungod" then
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
+
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 Delete()
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -330,16 +315,11 @@ CloudInvoke(chr.PompousTheCloud,"ManualActivationOnly",true)
 CloudInvoke(chr.Humanoid,"MaxHealth",100)
 task.wait(1)
 CloudInvoke(chr.Humanoid,"Health",100)
-task.wait(0.8)
-DeleteCloud()
 end
 elseif msg:sub(1,4) == prefix.."sky" then
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
+
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 Delete()
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -355,12 +335,9 @@ task.wait(1)
 CloudInvoke(chr.Humanoid,"Health",9e24)
 end
 elseif msg:sub(1,9) == prefix.."mapblock" then
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
+
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 Delete()
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -395,12 +372,9 @@ CloudInvoke(chr.PompousTheCloud,"Parent",game.Workspace)
 end
 elseif msg:sub(1,5) == prefix.."size" then
 local gs = tostring(msg:sub(7))
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
+
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 Delete()
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -417,12 +391,9 @@ elseif msg:sub(1,11) == prefix.."mesheditor" then
 Main.Visible = true
 elseif msg:sub(1,6) == prefix.."morph" then
 if tostring(msg:sub(8)) == "bacon" then
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
+
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 Delete()
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -451,12 +422,9 @@ task.wait(1)
 CloudInvoke(chr.Humanoid,"Health",9e24)
 end
 elseif tostring(msg:sub(8)) == "animegirl" then
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
+
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 plr.Backpack.PompousTheCloud.Parent = chr
 Delete()
@@ -485,12 +453,8 @@ task.wait(1)
 CloudInvoke(chr.Humanoid,"Health",9e24)
 end
 elseif tostring(msg:sub(8)) == "dog" then
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
 
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -522,12 +486,8 @@ task.wait(1)
 CloudInvoke(chr.Humanoid,"Health",9e24)
 end
 elseif tostring(msg:sub(8)) == "titan" then
-DeleteCloud()
-Delete()
-task.wait(0.6)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
 
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 plr.Backpack.PompousTheCloud.Parent = chr
@@ -559,12 +519,8 @@ task.wait(1)
 CloudInvoke(chr.Humanoid,"Health",9e24)
 end
 elseif tostring(msg:sub(8)) == "tank" then
-DeleteCloud()
-Delete()
-task.wait(0.7)
-repeat wait()
-game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
-until plr.Backpack:FindFirstChild'PompousTheCloud' ~= nil
+
+-- Add your code that gives cloud
 
 if plr.Backpack:FindFirstChild("PompousTheCloud") then
 plr.Backpack.PompousTheCloud.Parent = chr
